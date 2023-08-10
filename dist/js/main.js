@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".expand").on("click",(function(){var n=$(this);n.toggleClass("active"),n.parent().nextAll(".hidden-column").slice(0,6).toggleClass("show")}))}));
