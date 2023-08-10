@@ -26,65 +26,69 @@ html {
     font-size: $fontSize;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+.grid {
     border: 1px solid $borderColor;
     border-radius: 10px;
-}
 
-.cell {
-    padding: 10px;
-    color: $fontColorGray;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(8, minmax(100px, 1fr));
 
-    &:not(:nth-child(-n+9)) {
-        border-top: 1px solid $borderColor;
+        &:not(:last-child) {
+            border-bottom: 1px solid $borderColor;
+        }
     }
 
-    &:not(:nth-child(9n)) {
-        border-right: 1px solid $borderColor;
-    }
+    &__cell {
+        padding: 10px;
+        color: $fontColorGray;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    svg {
-        cursor: pointer;
-    }
-}
+        &:not(:last-child) {
+            border-right: 1px solid $borderColor;
+        }
 
-.header {
-    font-weight: $fontWeightBold;
-    color: $fontColorGray;
-    flex-direction: column;
-    padding: 5px 5px 20px;
-    .icon-wrapper {
-        flex-grow: 1;
-        width: 100%;
-        margin-bottom: 10px;
-        svg {
-            float: right;
-            width: 14px;
-            path {
-                fill: $borderColor
+        &:first-child {
+            display: none;
+        }
+
+        &--header {
+            font-weight: $fontWeightBold;
+            color: $fontColorGray;
+            flex-direction: column;
+            padding: 5px 5px 20px;
+            
+            .icon-wrapper {
+                flex-grow: 1;
+                width: 100%;
+                margin-bottom: 10px;
+                svg {
+                    float: right;
+                    width: 14px;
+                    path {
+                        fill: $borderColor
+                    }
+                }
             }
+        }
+
+        svg {
+            cursor: pointer;
         }
     }
 }
 
-.expand-button-wrapper {
-    display: none;
-}
-
-.action-button {
+.btn {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: $fontWeightBold;
 
-    &.expand {
+    &__expand {
         background-color: $orangeButton;
         color: $fontColorWhite;
         width: 100%;
@@ -93,52 +97,55 @@ html {
             content: '+';
         }
 
-        &.active {
+        &--active {
             &::after {
                 content: '-';
             }
         }
     }
 
-    &.white {
+    &__primary {
         border: 1px solid $borderColor;
         background-color: transparent;
         color: $fontColorGray;
     }
 
-    &.orange {
+    &__secondary {
         background-color: $orangeButton;
         color: $fontColorWhite;
     }
 }
 
 @media screen and (max-width: $dimension) {
-    .grid-container {
-        grid-template-columns: 50px 1fr 1fr;
-    }
-
-    .expand-button-wrapper {
-        display: flex;
-    }
-    
-    .cell {
-        &:nth-child(3n) {
-            border-right: none;
+    .grid {
+        &__row {
+            grid-template-columns: 50px 1fr 1fr;
         }
 
-        &.hidden-column {
-            display: none;
-    
-            &::before {
-                content: attr(data-label);
-                font-weight: $fontWeightBold;
+        &__cell {
+            &:first-child {
+                display: flex;
             }
-    
-            &.show { 
+
+            &:nth-child(3n) {
+                border-right: none;
+            }
+            
+            &--hidden {
+                display: none;
+            }
+
+            &--show {
                 grid-column: 1 / 4;
                 display: flex;
                 justify-content: space-between;
-                border-right: none;
+                border-top: 1px solid $borderColor;
+                border-right: none !important;
+
+                &::before {
+                    content: attr(data-label);
+                    font-weight: $fontWeightBold;
+                }
             }
         }
     }

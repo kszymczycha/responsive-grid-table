@@ -1,8 +1,9 @@
 $(document).ready(function() {
-    $('.expand').on('click', function() {
+    $('.btn__expand').on('click', function() {
         var $this = $(this);
-        $this.toggleClass('active');
-        var $hiddenColumns = $this.parent().nextAll('.hidden-column').slice(0, 6);
-        $hiddenColumns.toggleClass('show');
+        $this.toggleClass('btn__expand--active');
+        var $parentCell = $this.closest(".grid__cell");
+        var $hiddenCells = $parentCell.siblings(".grid__cell--hidden");
+        $hiddenCells.toggleClass('grid__cell--show');
     });
 });

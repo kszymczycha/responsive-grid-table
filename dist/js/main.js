@@ -1,1 +1,1 @@
-$(document).ready((function(){$(".expand").on("click",(function(){var n=$(this);n.toggleClass("active"),n.parent().nextAll(".hidden-column").slice(0,6).toggleClass("show")}))}));
+$(document).ready((function(){$(".btn__expand").on("click",(function(){var l=$(this);l.toggleClass("btn__expand--active"),l.closest(".grid__cell").siblings(".grid__cell--hidden").toggleClass("grid__cell--show")}))}));

@@ -7,174 +7,190 @@
   <link rel="stylesheet" href="./dist/styles/styles.css">
 </head>
 <body>
-  <div class="grid-container">
-    <div class="cell header expand-button-wrapper"></div>
-    <div class="cell header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+  <div class="grid">
+
+    <div class="grid__row">
+      <div class="grid__cell grid__cell--header"></div>
+      <div class="grid__cell grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Data rozpoczęcia</span>
       </div>
-      <span>Data rozpoczęcia</span>
-    </div>
-    <div class="cell header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Nasze gry</span>
       </div>
-      <span>Nasze gry</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Typ gry</span>
       </div>
-      <span>Typ gry</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Nazwa firmy</span>
       </div>
-      <span>Nazwa firmy</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Aktualna runda</span>
       </div>
-      <span>Aktualna runda</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Harmonogram rund</span>
       </div>
-      <span>Harmonogram rund</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        </span>Certyfikat</span>
       </div>
-      </span>Certyfikat</span>
-    </div>
-    <div class="cell hidden-column header">
-      <div class="icon-wrapper">
-        <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-        </svg>
+      <div class="grid__cell grid__cell--hidden grid__cell--header">
+        <div class="icon-wrapper">
+          <svg class="bi bi-info-circle-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+        </div>
+        <span>Wejście do gry</span>
       </div>
-      <span>Wejście do gry</span>
     </div>
 
     <!-- 1 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Wielki Turniej Przedsiębiorstw</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">2</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Wielki Turniej Przedsiębiorstw</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">2</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
 
     <!-- 2 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Podkarpacki Turniej Online 4</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">5</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Podkarpacki Turniej Online 4</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">5</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"><button class="btn btn__primary">POBIERZ</button></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"><button class="action-button white">POBIERZ</button></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
 
     <!-- 3 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Wielki Turniej Przedsiębiorstw</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">4</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Wielki Turniej Przedsiębiorstw</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">4</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
 
     <!-- 4 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Podkarpacki Turniej Online 4</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">2</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Podkarpacki Turniej Online 4</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">2</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"><button class="btn btn__primary">POBIERZ</button></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"><button class="action-button white">POBIERZ</button></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
 
     <!-- 5 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Wielki Turniej Przedsiębiorstw</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">4</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Wielki Turniej Przedsiębiorstw</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">4</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"><button class="btn btn__primary">POBIERZ</button></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"><button class="action-button white">POBIERZ</button></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
     
     <!-- 6 -->
-    <div class="cell expand-button-wrapper"><button class="action-button expand"></button></div>
-    <div class="cell">2023-01-14 14:10</div>
-    <div class="cell">Podkarpacki Turniej Online 4</div>
-    <div data-label="Typ gry" class="cell hidden-column">Salon Fryzjerski</div>
-    <div data-label="Nazwa firmy" class="cell hidden-column">Hairstyle</div>
-    <div data-label="Aktualna runda" class="cell hidden-column">2</div>
-    <div data-label="Harmonogram rund" class="cell hidden-column">
-      <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
-        <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
-        <line x1="3" x2="21" y1="10" y2="10"/>
-      </svg>
+    <div class="grid__row">
+      <div class="grid__cell"><button class="btn btn__expand"></button></div>
+      <div class="grid__cell">2023-01-14 14:10</div>
+      <div class="grid__cell">Podkarpacki Turniej Online 4</div>
+      <div data-label="Typ gry" class="grid__cell grid__cell--hidden">Salon Fryzjerski</div>
+      <div data-label="Nazwa firmy" class="grid__cell grid__cell--hidden">Hairstyle</div>
+      <div data-label="Aktualna runda" class="grid__cell grid__cell--hidden">2</div>
+      <div data-label="Harmonogram rund" class="grid__cell grid__cell--hidden">
+        <svg class="feather feather-calendar" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <rect height="18" rx="2" ry="2" width="18" x="3" y="4"/>
+          <line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+      </div>
+      <div data-label="Certyfikat" class="grid__cell grid__cell--hidden"><button class="btn btn__primary">POBIERZ</button></div>
+      <div data-label="Wejście do gry" class="grid__cell grid__cell--hidden"><button class="btn btn__secondary">WEJDŹ</button></div>
     </div>
-    <div data-label="Certyfikat" class="cell hidden-column"><button class="action-button white">POBIERZ</button></div>
-    <div data-label="Wejście do gry" class="cell hidden-column"><button class="action-button orange">WEJDŹ</button></div>
+    
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./dist/js/main.js"></script>
