@@ -57,6 +57,20 @@ html {
 .header {
     font-weight: $fontWeightBold;
     color: $fontColorGray;
+    flex-direction: column;
+    padding: 5px 5px 20px;
+    .icon-wrapper {
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 10px;
+        svg {
+            float: right;
+            width: 14px;
+            path {
+                fill: $borderColor
+            }
+        }
+    }
 }
 
 .expand-button-wrapper {
