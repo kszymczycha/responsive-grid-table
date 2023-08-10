@@ -13,10 +13,11 @@
 }
 
 $fontFamily: 'Roboto', sans-serif;
-$orangeButton: #F19B11;
-$fontColorGray: #414141;
-$fontColorWhite: #FFFFFF;
+$colorOrange: #F19B11;
+$colorGray: #414141;
+$colorWhite: #FFFFFF;
 $borderColor: #CECECE;
+$colorRowBg: #EEEEEE;
 $fontWeightBold: 700;
 $fontSize: 14px;
 $dimension: 991px;
@@ -37,11 +38,15 @@ html {
         &:not(:last-child) {
             border-bottom: 1px solid $borderColor;
         }
+
+        &:nth-of-type(even) {
+            background-color: $colorRowBg;
+        }
     }
 
     &__cell {
         padding: 10px;
-        color: $fontColorGray;
+        color: $colorGray;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -57,7 +62,7 @@ html {
 
         &--header {
             font-weight: $fontWeightBold;
-            color: $fontColorGray;
+            color: $colorGray;
             flex-direction: column;
             padding: 5px 5px 20px;
             
@@ -92,8 +97,8 @@ html {
     font-weight: $fontWeightBold;
 
     &__expand {
-        background-color: $orangeButton;
-        color: $fontColorWhite;
+        background-color: $colorOrange;
+        color: $colorWhite;
         width: 100%;
 
         &::after {
@@ -109,13 +114,13 @@ html {
 
     &__primary {
         border: 1px solid $borderColor;
-        background-color: transparent;
-        color: $fontColorGray;
+        background-color: $colorWhite;
+        color: $colorGray;
     }
 
     &__secondary {
-        background-color: $orangeButton;
-        color: $fontColorWhite;
+        background-color: $colorOrange;
+        color: $colorWhite;
     }
 }
 
@@ -144,6 +149,7 @@ html {
                 justify-content: space-between;
                 border-top: 1px solid $borderColor;
                 border-right: none !important;
+                background-color: $colorWhite;
 
                 &::before {
                     content: attr(data-label);
