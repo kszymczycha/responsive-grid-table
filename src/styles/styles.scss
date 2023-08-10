@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$fontFamily: 'Roboto', sans-serif;
+$orangeButton: #F19B11;
+$fontColorGray: #414141;
+$fontColorWhite: #FFFFFF;
+$borderColor: #CECECE;
+$fontWeightBold: 700;
+$fontSize: 14px;
+$dimension: 991px;
+
+html {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+}
+
+.cell {
+    padding: 10px;
+    color: $fontColorGray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:nth-child(-n+9)) {
+        border-top: 1px solid $borderColor;
+    }
+
+    &:not(:nth-child(9n)) {
+        border-right: 1px solid $borderColor;
+    }
+
+    svg {
+        cursor: pointer;
+    }
+}
+
+.header {
+    font-weight: $fontWeightBold;
+    color: $fontColorGray;
+}
+
+.expand-button-wrapper {
+    display: none;
+}
+
+.action-button {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: $fontWeightBold;
+
+    &.expand {
+        background-color: $orangeButton;
+        color: $fontColorWhite;
+        width: 100%;
+
+        &::after {
+            content: '+';
+        }
+
+        &.active {
+            &::after {
+                content: '-';
+            }
+        }
+    }
+
+    &.white {
+        border: 1px solid $borderColor;
+        background-color: transparent;
+        color: $fontColorGray;
+    }
+
+    &.orange {
+        background-color: $orangeButton;
+        color: $fontColorWhite;
+    }
+}
+
+@media screen and (max-width: $dimension) {
+    .grid-container {
+        grid-template-columns: 50px 1fr 1fr;
+    }
+
+    .expand-button-wrapper {
+        display: flex;
+    }
+    
+    .cell {
+        &:nth-child(3n) {
+            border-right: none;
+        }
+
+        &.hidden-column {
+            display: none;
+    
+            &::before {
+                content: attr(data-label);
+                font-weight: $fontWeightBold;
+            }
+    
+            &.show { 
+                grid-column: 1 / 4;
+                display: flex;
+                justify-content: space-between;
+                border-right: none;
+            }
+        }
+    }
+}
