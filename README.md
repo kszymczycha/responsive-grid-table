@@ -1,6 +1,6 @@
 ### Responsive grid table
 
-[https://kszymczycha.github.io/bookmark](https://kszymczycha.github.io/responsive-grid-table/)]
+[https://kszymczycha.github.io/bookmark](https://kszymczycha.github.io/responsive-grid-table/)
 
 Desktop:
 
