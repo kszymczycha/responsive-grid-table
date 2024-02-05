@@ -4,8 +4,8 @@
 
 Desktop:
 
-![desktop-responsive-grid-table](https://github.com/kszymczycha/responsive-grid-table/assets/30631373/ec4a104c-07e8-4c83-9316-2e681d281828)
+![desktop-responsive-grid-table](https://github.com/kszymczycha/responsive-grid-table/assets/30631373/2b3cf6af-64e8-4b8a-a696-ed088628c45f)
 
 Mobile:
 
-![mobile-responsive-grid-table](https://github.com/kszymczycha/responsive-grid-table/assets/30631373/79b7f669-0030-4284-87e4-fc907f3f1814)
+![mobile-responsive-grid-table](https://github.com/kszymczycha/responsive-grid-table/assets/30631373/97b5fb07-126f-4ffd-83ce-5c05b5fa4c79)
